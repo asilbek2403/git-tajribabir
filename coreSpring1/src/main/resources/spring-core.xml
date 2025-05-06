@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--    <bean class="asilcore.uz.Baninject.Limona" name="limona" init-method="initMethod" destroy-method="destroyMethod">-->
+<!--        <property name="name" value="banana"/>-->
+<!--        <property name="age" value="11"/>-->
+<!--        <property name="item">-->
+<!--            <list>-->
+<!--            <value>Mevalar</value>-->
+<!--            <value>Banan</value>-->
+<!--            <value> Uzum</value>-->
+<!--            <value>Gilos</value>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--    </bean>-->
+<!--    Yuqorida Limona setter Inject for-->
+
+
+<!--    <bean class="asilcore.uz.Baninject.Banana" id="banana1" init-method="initMethod" destroy-method="destroyMethod" >-->
+<!--        <constructor-arg name="name" value="Nemo"/>-->
+<!--        <constructor-arg name="age" value="33"/>-->
+<!--        <constructor-arg>-->
+<!--            <list>-->
+<!--                <value>Colection list da</value>-->
+<!--                <value>Mevalar ham </value>-->
+<!--                <value>OLamalar</value>-->
+<!--            </list>-->
+<!--        </constructor-arg>-->
+<!--        <constructor-arg>-->
+<!--            <map>-->
+<!--                <entry key="Mapda" value="1"></entry>-->
+<!--                <entry key="Panda" value="ajdaho"></entry>-->
+<!--            </map>-->
+<!--        </constructor-arg></bean>-->
+
+
+
+<!--    Objectlar with Set and Constructor-->
+
+
+<!--    <bean class="asilcore.uz.Baninject.Fruit" name="fruit">-->
+<!--        <property name="name"  value="quyosh"></property>-->
+<!--        <property name="content" value="Salom nur"></property>-->
+<!--    </bean>-->
+<!--    <bean class="asilcore.uz.Baninject.Objfruit" name="objfruit">-->
+<!--        <property name="name" value="uzumga "></property>-->
+<!--        <property name="item">-->
+<!--            <list >-->
+<!--                <ref bean="fruit"></ref>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--    </bean>-->
+<!--    Object in Setter inject-->
+
+<!--Cons-Inj-->
+<!--    <bean name="tok1" class="asilcore.uz.Baninject.Tok">-->
+<!--        <constructor-arg name="name" value="Uzum hasan"/>-->
+<!--    </bean>-->
+<!--    <bean class="asilcore.uz.Baninject.Tak" name="tak1">-->
+<!--        <constructor-arg name="name" value="Kampot"/>-->
+<!--        <constructor-arg>-->
+<!--            <list>-->
+<!--                <value>Uzumlar</value>-->
+<!--                <value>Kompot</value>-->
+<!--            </list>-->
+<!--        </constructor-arg>-->
+<!--    </bean>-->
+
+
+<!--    Autowiring Constr-->
+<!--    Bunda setda gi metodning nomi abirr xil bean name ojectlarda ***-->
+<!--    <bean class="asilcore.uz.Baninject.Awired" name="awired">-->
+<!--        <property name="name" value=" Cola"/>-->
+<!--        <property name="content" value="Coco"/>-->
+<!--    </bean>-->
+
+<!--    <bean class="asilcore.uz.Baninject.Autotype" name="autotype1" autowire="constructor">-->
+
+<!--    <bean id="examo" class="asilcore.uz.Automat.Examo">-->
+<!--        <property name="name" value="Ali"/>-->
+<!--        <property name="surname" value="Valiyev"/>-->
+<!--    </bean>-->
+<!--    <bean class="asilcore.uz.Automat.Examf1" id="examf1">-->
+<!--    </bean>-->
+
+    <context:component-scan base-package="asilcore.uz.Automat"/>
+
+
+
+</beans>
